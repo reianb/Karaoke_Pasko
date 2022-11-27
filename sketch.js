@@ -1,5 +1,6 @@
 var cnv;
 let bckgrndimg;
+let mic;
 function centerCanvas() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
@@ -13,6 +14,8 @@ function preload() {
 function setup() {
   cnv = createCanvas(1000, 800);
   centerCanvas();
+  mic = new p5.AudioIn();
+  mic.start();
   imageMode(CENTER);
 }
 
