@@ -1,8 +1,13 @@
 var cnv;
+let bckgrndimg;
 function centerCanvas() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
   cnv.position(x, y);
+}
+
+function preload() {
+  bckgrndimg = loadImage("assets/karaokeNoSound.png");
 }
 
 function setup() {
@@ -12,5 +17,6 @@ function setup() {
 }
 
 function draw() {
-  background(125);
+  background(60);
+  image(bckgrndimg,500,400);
 }
