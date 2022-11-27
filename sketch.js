@@ -6,7 +6,7 @@ function centerCanvas() {
 }
 
 function setup() {
-  cnv = createCanvas(1100, 800);
+  cnv = createCanvas(1000, 800);
   centerCanvas();
   imageMode(CENTER);
 }
