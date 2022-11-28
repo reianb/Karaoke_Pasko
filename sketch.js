@@ -15,6 +15,7 @@ function preload() {
   karaokeImg0 = loadImage("assets/karaoke0.png");
   karaokeImg1 = loadImage("assets/karaoke1.png");
   karaokeImg2 = loadImage("assets/karaoke2.png");
+  karaokeImg3 = loadImage("assets/karaoke3.png");
 }
 
 function setup() {
@@ -52,5 +53,5 @@ function thirdVol() {
 }
 
 function fourthVol() {
-
+  image(karaokeImg3,500,400);
 }
