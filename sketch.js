@@ -14,9 +14,9 @@ function preload() {
 function setup() {
   cnv = createCanvas(1000, 800);
   centerCanvas();
+  imageMode(CENTER);
   mic = new p5.AudioIn();
   mic.start();
-  imageMode(CENTER);
 }
 
 function draw() {
