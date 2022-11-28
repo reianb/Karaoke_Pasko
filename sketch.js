@@ -1,6 +1,7 @@
 var cnv;
 let bckgrndimg;
 let mic;
+let karaokeImg;
 function centerCanvas() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
@@ -9,6 +10,7 @@ function centerCanvas() {
 
 function preload() {
   bckgrndimg = loadImage("assets/karaokeNoSound.png");
+  karaokeImg = loadImage("assets/karaoke0.png");
 }
 
 function setup() {
@@ -22,4 +24,14 @@ function setup() {
 function draw() {
   background(60);
   image(bckgrndimg,500,400);
+
+  let micLevel = mic.getLevel();
+    if(micLevel > .25){
+      changeImg();
+    }
+}
+
+function changeImg() {
+  image(karaokeImg,500,400);
+  console.log("works");
 }
