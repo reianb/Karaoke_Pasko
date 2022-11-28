@@ -43,10 +43,14 @@ function firstVol() {
   image(karaokeImg0,500,400);
 }
 
-function secVol () {
+function secVol() {
   image(karaokeImg1,500,400);
 }
 
-function thirdVol (){
+function thirdVol() {
   image(karaokeImg2,500,400);
+}
+
+function fourthVol() {
+
 }
