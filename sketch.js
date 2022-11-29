@@ -31,11 +31,11 @@ function draw() {
   image(bckgrndimg,500,400);
 
   let micLevel = mic.getLevel();
-    if(micLevel > .05 && micLevel < .25){
+    if(micLevel > .05 && micLevel < .10){
       firstVol();
-    }else if (micLevel > .25 && micLevel < .35){
+    }else if (micLevel > .10 && micLevel < .20){
       secVol();
-    }else if (micLevel >.35 && micLevel < .40){
+    }else if (micLevel >.20 && micLevel < .22){
       thirdVol();
     }
 }
