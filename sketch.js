@@ -16,6 +16,7 @@ function preload() {
   karaokeImg1 = loadImage("assets/karaoke1.png");
   karaokeImg2 = loadImage("assets/karaoke2.png");
   karaokeImg3 = loadImage("assets/karaoke3.png");
+  karaokeImg4 = loadImage("assets/karaoke4.png");
 }
 
 function setup() {
@@ -33,11 +34,15 @@ function draw() {
   let micLevel = mic.getLevel();
     if(micLevel > .05 && micLevel < .10){
       firstVol();
-    }else if (micLevel > .10 && micLevel < .20){
+    }else if (micLevel > .10 && micLevel < .15){
       secVol();
-    }else if (micLevel >.20 && micLevel < .22){
+    }else if (micLevel >.15 && micLevel < .20){
       thirdVol();
-    }
+    }else if (micLevel >.21 && micLevel <.25){
+      fourthVol();
+    }/**else if (micLevel >.25 && micLevel <.30){
+      fithVol();
+    }**/
 }
 
 function firstVol() {
@@ -54,4 +59,8 @@ function thirdVol() {
 
 function fourthVol() {
   image(karaokeImg3,500,400);
+}
+
+function fifthVol() {
+  image(karaokeImg4,500,400);
 }
