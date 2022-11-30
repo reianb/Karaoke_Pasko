@@ -16,7 +16,7 @@ function preload() {
   karaokeImg1 = loadImage("assets/karaoke1.png");
   karaokeImg2 = loadImage("assets/karaoke2.png");
   karaokeImg3 = loadImage("assets/karaoke3.png");
-  karaokeImg4 = loadImage("assets/karaoke4.png");
+  karaokeImg4 = loadImage("assets/karaoke4.png")
 }
 
 function setup() {
@@ -40,9 +40,9 @@ function draw() {
       thirdVol();
     }else if (micLevel >.21 && micLevel <.25){
       fourthVol();
-    }/**else if (micLevel >.25 && micLevel <.30){
+    }else if (micLevel >.25 && micLevel <.30){
       fithVol();
-    }**/
+    }
 }
 
 function firstVol() {
